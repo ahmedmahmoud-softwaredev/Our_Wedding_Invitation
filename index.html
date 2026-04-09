@@ -358,7 +358,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
           <div class="fold-crease"></div>
 
           <div class="fold-panel" id="panel-mid">
-            <p class="mid-invite">يتشرّف والداهما بدعوتكم<br/>لحضور حفل زفافهما السعيد</p>
+            <p class="mid-invite">يتشرّفان بدعوتكم<br/>لحضور حفل زفافهما السعيد</p>
             <div class="date-strip">
               <div class="ds-num">٠٥</div>
               <div class="ds-text"><span class="ds-month">يونيو</span><span class="ds-year">٢٠٢٦</span></div>
@@ -522,6 +522,10 @@ function openScroll(){
 
   requestAnimationFrame(tick);
 }
+
+window.addEventListener('load', () => {
+  setTimeout(openScroll, 400);
+});
 
 function goFullPage(){
   if(state !== 'open') return;
